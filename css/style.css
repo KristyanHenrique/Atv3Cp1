@@ -2,7 +2,7 @@
 #container{
 	display: grid;
 	grid-template-columns: 4fr 1fr;
-	grid-template-rows: 35vh 10vh 100vh 10vh;
+	grid-template-rows: 35vh 10vh 200vh 10vh;
 	grid-template-areas: "header header"
 						 "nav    nav"
 						 "main   aside"
@@ -35,9 +35,63 @@ nav > ul{
 
 main{
 	grid-area: main;
-	background-color: palegoldenrod;
+	background-color: whitesmoke;
 }
-
+.BaseCartoes{
+	margin: 5px;
+	border-color: grey;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: white;
+	margin-top:15px;
+	margin-bottom:20px;
+}
+article{
+	margin: 5px;
+	border-color: grey;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: white;
+	margin-top:15px;
+	margin-bottom:20px;
+}
+ol{
+	margin-left: 20px;
+}
+.cartoes{
+	display:flex;
+}
+#tc{
+	text-align: center;
+}
+/*card*/
+.card{
+	background-color:#FFF;
+	margin:10px;
+	width: 100%;
+	border-radius:8px;
+	box-shadow: 0px 4px 8px #CCC;
+	transition: 0.2s;
+}
+.card-content{
+	padding:10px;
+}
+.card-content p{
+	font: 1.1rem Roboto, sans-serif;
+	line-height: 20px;
+	text-align: center;
+}
+.TituloCard{
+	text-align: center;
+}
+.CardImg{
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 aside{
 	grid-area: aside;
 	border-color: grey;
@@ -60,4 +114,66 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
+}
+
+footer > p > a{
+	text-decoration: none;
+	color: white;
+}
+
+.btn {
+    background-color: rgb(33, 156, 70);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(4, 92, 30);
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: rgb(4, 92, 30);
+}
+
+.btn:active {
+    background-color: rgb(129, 255, 166);
+    color: rgb(4, 92, 30);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.modal-content {
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 750px;
+    background-color: #eee;
+    padding: 0;
+    box-shadow: 0 0 2px #fff;
+}
+
+.modal-header h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-header{
+    background-color: #ccc;
+}
+
+.modal-footer{
+    background-color: #ccc;
 }
